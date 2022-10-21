@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Google";
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+    height: auto;
+}
+
+@font-face {
+    font-family: "Google";
+    src: url(../fonts/ProductSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Google";
+    src: url(../fonts/ProductSans-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Google";
+    src: url(../fonts/ProductSans-Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: "Google";
+    src: url(../fonts/ProductSans-Light.ttf);
+    font-weight: lighter;
+}
+
+
+
+header {
+    width: 100vw;
+    padding: 10px 0;
+    background-color: #fff;
+    z-index: 100;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.container--header {
+    margin: 70px 20vw 0px;
+}
+header .herobanner {
+    width: 60vw;
+    height: 130px;
+    background-image: url('https://gstatic.com/classroom/themes/img_reachout.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 7px;
+}
+header .herobanner--titles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    color: white;
+}
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.1em;
+}
+header .annoncer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 15px 20px;
+    border: 1px solid rgb(194, 194, 194);
+    margin: 8px 0;
+    width: calc(100% - 40px);
+    border-radius: 7px;
+    color: rgb(172, 172, 172);
+    font-size: 0.8em;
+} 
+.annoncer img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+#messages {
+    margin: 0px 0px 50px 20vw;
+    max-height: 48vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.container--message {
+    padding: 20px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 7px;
+    width: calc(60vw - 40px);
+    margin-bottom: 8px;
+}
+.container--message p {
+    font-size: 0.8em;
+}
+
+form {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid rgb(172, 172, 172);
+    background-color: #fff;
+}
+.container--form {
+    margin: 0px 20vw;
+    width: 60vw;
+    padding: 10px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#pseudo, textarea {
+    height: 100%;
+}
+.barre--envoi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 7px;
+}
+#envoyer {
+    border: none;
+    height: 50px;
+    padding: 0px 20px;
+    background-color: rgb(26, 112, 38);
+    cursor: pointer;
+    color: white;
+    border-radius: 7px;
+}
+textarea {
+    width: 30vw;
+    border: none;
+    resize: none;
+    padding: 5px;
+    height: 40px;
+}
+#pseudo {
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.error--champsvides {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: 1px solid rgb(197, 74, 74);
+    background-color: rgb(184, 43, 43);
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+}
