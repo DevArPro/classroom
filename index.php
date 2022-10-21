@@ -60,7 +60,30 @@
         function load_messages() {
             $("#messages").load("loadMessages.php");
         }
-</script>
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDpLtCAVSbx1RtWFLAVK0WBEY7VODzU1lI",
+        authDomain: "raisoseacialle.firebaseapp.com",
+        projectId: "raisoseacialle",
+        storageBucket: "raisoseacialle.appspot.com",
+        messagingSenderId: "603829167391",
+        appId: "1:603829167391:web:2315c1c0e4f0e35cddbc2a",
+        measurementId: "G-275YHY7MNM"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 </body>
 </html>
